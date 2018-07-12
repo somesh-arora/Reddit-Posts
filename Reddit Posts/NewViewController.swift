@@ -10,10 +10,10 @@ import UIKit
 
 class NewViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var searchButton: UIButton!
-    
+    var receivedSubReddit = ""
     let RedditBaseURL = URL(string:"https://www.reddit.com/r")
     struct TopTierDataObject:Decodable
     {
@@ -47,6 +47,9 @@ class NewViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     {
         super.viewDidLoad()
        
+         let RedditBaseURL = URL(string:"https://www.reddit.com/r")
+        
+       // let redditURL = URL(string: "\(RedditBaseURL!)/\(receivedSubReddit)/.json")
         let redditURL = "https://www.reddit.com/r/funny/.json"
         
         guard let url = URL(string: redditURL) else {return}
@@ -158,6 +161,7 @@ class NewViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     @IBAction func searchButton(_ sender: Any)
     {
         //print(searchTextField.text?.description)
+        self.view.endEditing(true)
         let subReddit = searchTextField.text
         
         if let completeURL = URL(string: "\(RedditBaseURL!)/\(subReddit ?? "funny")/.json")

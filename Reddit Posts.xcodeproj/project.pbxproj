@@ -16,6 +16,7 @@
 		CED69D7C20F52F67001E93CC /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED69D7B20F52F67001E93CC /* APICall.swift */; };
 		CED69DA020F75E60001E93CC /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED69D9F20F75E60001E93CC /* NewViewController.swift */; };
 		CED69DA220F76FC2001E93CC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED69DA120F76FC2001E93CC /* WebViewController.swift */; };
+		CED69DA420F79B5B001E93CC /* SubRedditListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED69DA320F79B5B001E93CC /* SubRedditListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CED69D7B20F52F67001E93CC /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
 		CED69D9F20F75E60001E93CC /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		CED69DA120F76FC2001E93CC /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		CED69DA320F79B5B001E93CC /* SubRedditListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubRedditListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				CED69D7B20F52F67001E93CC /* APICall.swift */,
 				CED69D9F20F75E60001E93CC /* NewViewController.swift */,
 				CED69DA120F76FC2001E93CC /* WebViewController.swift */,
+				CED69DA320F79B5B001E93CC /* SubRedditListViewController.swift */,
 				CED69D6920F52E57001E93CC /* Main.storyboard */,
 				CED69D6C20F52E5A001E93CC /* Assets.xcassets */,
 				CED69D6E20F52E5A001E93CC /* LaunchScreen.storyboard */,
@@ -152,6 +155,7 @@
 				CED69D7C20F52F67001E93CC /* APICall.swift in Sources */,
 				CED69DA220F76FC2001E93CC /* WebViewController.swift in Sources */,
 				CED69D7A20F52F47001E93CC /* Network.swift in Sources */,
+				CED69DA420F79B5B001E93CC /* SubRedditListViewController.swift in Sources */,
 				CED69D6620F52E57001E93CC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
