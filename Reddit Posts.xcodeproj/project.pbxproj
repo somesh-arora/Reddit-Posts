@@ -12,11 +12,10 @@
 		CED69D6B20F52E57001E93CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED69D6920F52E57001E93CC /* Main.storyboard */; };
 		CED69D6D20F52E5A001E93CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED69D6C20F52E5A001E93CC /* Assets.xcassets */; };
 		CED69D7020F52E5A001E93CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED69D6E20F52E5A001E93CC /* LaunchScreen.storyboard */; };
-		CED69D7820F52ECE001E93CC /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED69D7720F52ECE001E93CC /* PostsTableViewController.swift */; };
 		CED69D7A20F52F47001E93CC /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED69D7920F52F47001E93CC /* Network.swift */; };
 		CED69D7C20F52F67001E93CC /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED69D7B20F52F67001E93CC /* APICall.swift */; };
-		CED69D7E20F53037001E93CC /* JSONDataExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED69D7D20F53037001E93CC /* JSONDataExtractor.swift */; };
 		CED69DA020F75E60001E93CC /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED69D9F20F75E60001E93CC /* NewViewController.swift */; };
+		CED69DA220F76FC2001E93CC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED69DA120F76FC2001E93CC /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +26,10 @@
 		CED69D6C20F52E5A001E93CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CED69D6F20F52E5A001E93CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CED69D7120F52E5A001E93CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CED69D7720F52ECE001E93CC /* PostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
 		CED69D7920F52F47001E93CC /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		CED69D7B20F52F67001E93CC /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
-		CED69D7D20F53037001E93CC /* JSONDataExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDataExtractor.swift; sourceTree = "<group>"; };
 		CED69D9F20F75E60001E93CC /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		CED69DA120F76FC2001E93CC /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,15 +64,14 @@
 			children = (
 				CED69D6520F52E57001E93CC /* AppDelegate.swift */,
 				CED69D6720F52E57001E93CC /* ViewController.swift */,
-				CED69D7720F52ECE001E93CC /* PostsTableViewController.swift */,
 				CED69D7920F52F47001E93CC /* Network.swift */,
 				CED69D7B20F52F67001E93CC /* APICall.swift */,
-				CED69D7D20F53037001E93CC /* JSONDataExtractor.swift */,
+				CED69D9F20F75E60001E93CC /* NewViewController.swift */,
+				CED69DA120F76FC2001E93CC /* WebViewController.swift */,
 				CED69D6920F52E57001E93CC /* Main.storyboard */,
 				CED69D6C20F52E5A001E93CC /* Assets.xcassets */,
 				CED69D6E20F52E5A001E93CC /* LaunchScreen.storyboard */,
 				CED69D7120F52E5A001E93CC /* Info.plist */,
-				CED69D9F20F75E60001E93CC /* NewViewController.swift */,
 			);
 			path = "Reddit Posts";
 			sourceTree = "<group>";
@@ -151,10 +148,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CED69D6820F52E57001E93CC /* ViewController.swift in Sources */,
-				CED69D7820F52ECE001E93CC /* PostsTableViewController.swift in Sources */,
 				CED69DA020F75E60001E93CC /* NewViewController.swift in Sources */,
-				CED69D7E20F53037001E93CC /* JSONDataExtractor.swift in Sources */,
 				CED69D7C20F52F67001E93CC /* APICall.swift in Sources */,
+				CED69DA220F76FC2001E93CC /* WebViewController.swift in Sources */,
 				CED69D7A20F52F47001E93CC /* Network.swift in Sources */,
 				CED69D6620F52E57001E93CC /* AppDelegate.swift in Sources */,
 			);
@@ -303,6 +299,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C6AQM8MP6F;
 				INFOPLIST_FILE = "Reddit Posts/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,6 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C6AQM8MP6F;
 				INFOPLIST_FILE = "Reddit Posts/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
